@@ -1,0 +1,70 @@
+
+import { Check } from 'lucide-react';
+import TransitionWrapper from './TransitionWrapper';
+
+const AboutSection = () => {
+  const skills = [
+    "Curriculum Development",
+    "Learning Experience Design",
+    "Course Authoring",
+    "Adult Education",
+    "ESL Instruction",
+    "Educational Technology",
+    "Workshop Facilitation",
+    "Inclusive Design",
+    "Instructional Design"
+  ];
+
+  return (
+    <section className="py-20 bg-white" id="about">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="order-2 lg:order-1">
+            <TransitionWrapper animation="slide-in">
+              <h2 className="text-3xl font-display font-bold tracking-tight mb-6">
+                About My Approach
+              </h2>
+              
+              <p className="text-muted-foreground mb-6">
+                I specialize in creating transformative learning experiences that engage diverse audiences across higher education, corporate settings, and non-profit organizations. My approach combines research-backed instructional design principles with innovative technology to deliver meaningful educational outcomes.
+              </p>
+              
+              <p className="text-muted-foreground mb-8">
+                With expertise in ESL instruction and adult education, I design courses that address the unique needs of learners from varied backgrounds. My work with organizations focused on women in EdTech has further honed my ability to create inclusive learning environments that challenge stereotypes and promote leadership.
+              </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-8">
+                {skills.map((skill, index) => (
+                  <div 
+                    key={index} 
+                    className="flex items-center gap-2"
+                  >
+                    <Check size={16} className="text-primary min-w-[16px]" />
+                    <span className="text-sm">{skill}</span>
+                  </div>
+                ))}
+              </div>
+            </TransitionWrapper>
+          </div>
+          
+          <div className="order-1 lg:order-2 relative">
+            <TransitionWrapper animation="fade-in-delayed">
+              <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" 
+                  alt="Designer working on a course" 
+                  className="object-cover w-full h-full"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent"></div>
+              </div>
+              
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 rounded-full bg-secondary/40 blur-xl"></div>
+            </TransitionWrapper>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutSection;
