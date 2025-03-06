@@ -1,3 +1,4 @@
+
 import { CourseCardProps } from "@/components/CourseCard";
 
 // Higher Education Courses
@@ -63,7 +64,7 @@ export const nonProfitCourses: CourseCardProps[] = [
     title: "Uncoding Inequality: Women in AI & Social Justice",
     description: "An in-depth exploration of women's contributions and challenges in AI, examining bias in algorithms and fostering more inclusive AI development approaches.",
     category: "Non-Profit",
-    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=800&q=80",
     tags: ["Women in Tech", "AI Ethics", "Social Justice", "Gender Equity"]
   },
   {
@@ -71,7 +72,7 @@ export const nonProfitCourses: CourseCardProps[] = [
     title: "Inclusive EdTech: Women Shaping Digital Learning",
     description: "A comprehensive course exploring women's impact in educational technology, addressing gender gaps in tech leadership, and developing strategies for inclusive digital learning.",
     category: "Non-Profit",
-    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=800&q=80",
     tags: ["EdTech", "Digital Inclusion", "Women Leaders", "Education Innovation"]
   },
   {
@@ -143,27 +144,6 @@ export const courseDetails: Record<string, {
       "Research-based learning experience prototype",
       "Theoretical framework connecting design principles to learning science"
     ]
-  },
-  "np-1": {
-    objectives: [
-      "Identify and analyze stereotypes affecting Asian women in professional settings",
-      "Develop authentic leadership approaches that honor cultural identity",
-      "Create strategies for navigating bias and microaggressions",
-      "Build community networks for ongoing support and mentorship"
-    ],
-    audience: "Asian and Asian American women in professional fields, community organizers, and AAPI advocacy organizations.",
-    duration: "8 weeks (workshop series)",
-    methodology: "The program combines personal narrative exploration, case studies, community-building activities, and action planning. Participants develop personal leadership philosophies while building supportive networks.",
-    outcomes: [
-      "Personal leadership development plan",
-      "Community resource network",
-      "Strategies for workplace advocacy and empowerment"
-    ],
-    testimonial: {
-      quote: "This workshop transformed how I view my cultural identity in leadership contexts. The community we built continues to be a source of support and inspiration.",
-      author: "Michelle Chen",
-      title: "Education Technology Director"
-    }
   },
   "esl-1": {
     objectives: [
