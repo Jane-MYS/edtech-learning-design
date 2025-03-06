@@ -6,7 +6,7 @@ import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
-import { higherEdCourses, corporateCourses, eslCourses, nonProfitCourses, categories } from '@/data/courses';
+import { higherEdCourses, eslCourses, nonProfitCourses, categories } from '@/data/courses';
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -42,9 +42,6 @@ const Index = () => {
           switch (category.id) {
             case 'higher-ed':
               coursesData = higherEdCourses;
-              break;
-            case 'corporate':
-              coursesData = corporateCourses;
               break;
             case 'esl-writing':
               coursesData = eslCourses;

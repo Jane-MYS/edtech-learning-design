@@ -29,34 +29,6 @@ export const higherEdCourses: CourseCardProps[] = [
   }
 ];
 
-// Corporate Training Courses
-export const corporateCourses: CourseCardProps[] = [
-  {
-    id: "corp-1",
-    title: "Equity & Diversity in the Tech Workplace",
-    description: "A professional development program designed for tech corporations to foster inclusive workplaces and address unconscious bias.",
-    category: "Corporate Training",
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-    tags: ["Diversity & Inclusion", "Tech Industry", "Professional Development"]
-  },
-  {
-    id: "corp-2",
-    title: "Instructional Design for Tech Professionals",
-    description: "A specialized training program helping technical experts develop effective teaching and training materials for diverse audiences.",
-    category: "Corporate Training",
-    imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
-    tags: ["Instructional Design", "Technical Training", "Knowledge Transfer"]
-  },
-  {
-    id: "corp-3",
-    title: "Digital Storytelling for Business",
-    description: "A workshop teaching professionals how to leverage narrative techniques for impactful business communications and presentations.",
-    category: "Corporate Training",
-    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
-    tags: ["Storytelling", "Business Communication", "Presentation Skills"]
-  }
-];
-
 // ESL and Writing Courses
 export const eslCourses: CourseCardProps[] = [
   {
@@ -116,7 +88,6 @@ export const nonProfitCourses: CourseCardProps[] = [
 // All courses combined
 export const allCourses = [
   ...higherEdCourses,
-  ...corporateCourses,
   ...eslCourses,
   ...nonProfitCourses
 ];
@@ -132,11 +103,6 @@ export const categories = [
     id: "higher-ed",
     title: "Higher Education",
     description: "Graduate-level courses designed for diverse learners, focusing on digital media, design thinking, and game-based learning."
-  },
-  {
-    id: "corporate",
-    title: "Corporate Training",
-    description: "Professional development programs emphasizing diversity, technical communication, and digital storytelling for business contexts."
   },
   {
     id: "esl-writing",
