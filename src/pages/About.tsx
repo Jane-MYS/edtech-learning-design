@@ -1,9 +1,26 @@
-
 import { useEffect } from 'react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import TransitionWrapper from '@/components/TransitionWrapper';
-import { Check, Code, Monitor, Database, Wrench, Server, Webcam, Lightbulb, Brain, Book, GraduationCap, Layers } from 'lucide-react';
+import { 
+  Check, 
+  Code, 
+  Monitor, 
+  Database, 
+  Wrench, 
+  Server, 
+  Webcam, 
+  Lightbulb, 
+  Brain, 
+  Book, 
+  GraduationCap, 
+  Layers,
+  Globe,
+  Users,
+  HandsClapping,
+  Search,
+  SplitSquareVertical
+} from 'lucide-react';
 
 const About = () => {
   useEffect(() => {
@@ -12,32 +29,52 @@ const About = () => {
   }, []);
   
   const philosophy = [
-    "Digital equity as a foundation for educational design",
-    "Culturally responsive approaches to learning technology",
-    "Community-based participatory design practices",
-    "Critical digital pedagogy that questions technology's role",
-    "Multimodal learning that embraces diverse ways of knowing"
+    {
+      title: "Digital Equity",
+      description: "Prioritizing accessibility and inclusion as a foundation for educational design",
+      icon: <Globe size={24} className="text-emerald-500" />
+    },
+    {
+      title: "Cultural Responsiveness",
+      description: "Creating learning technology that honors diverse cultural perspectives and knowledge systems",
+      icon: <Users size={24} className="text-indigo-500" />
+    },
+    {
+      title: "Community Participation",
+      description: "Engaging communities in co-designing educational experiences that meet their needs",
+      icon: <HandsClapping size={24} className="text-amber-500" />
+    },
+    {
+      title: "Critical Pedagogy",
+      description: "Questioning technology's role and challenging power dynamics in digital learning spaces",
+      icon: <Search size={24} className="text-rose-500" />
+    },
+    {
+      title: "Multimodal Learning",
+      description: "Embracing diverse ways of knowing through varied representational and communication modes",
+      icon: <SplitSquareVertical size={24} className="text-sky-500" />
+    }
   ];
 
   const learningTheories = [
     {
       name: "ADDIE Model",
-      icon: <Layers size={20} className="text-purple-500" />,
+      icon: <Layers size={24} className="text-purple-500" />,
       description: "Systematic instructional design through Analysis, Design, Development, Implementation, and Evaluation"
     },
     {
       name: "Behaviorism",
-      icon: <Check size={20} className="text-emerald-500" />,
+      icon: <Check size={24} className="text-emerald-500" />,
       description: "Learning as observable changes in behavior through stimulus-response connections"
     },
     {
       name: "Cognitive Psychology",
-      icon: <Brain size={20} className="text-amber-500" />,
+      icon: <Brain size={24} className="text-amber-500" />,
       description: "Focus on mental processes, information processing, and knowledge acquisition"
     },
     {
       name: "Constructivism",
-      icon: <Lightbulb size={20} className="text-sky-500" />,
+      icon: <Lightbulb size={24} className="text-sky-500" />,
       description: "Learners actively construct knowledge through experience and social interactions"
     }
   ];
@@ -116,39 +153,47 @@ const About = () => {
           </div>
           
           <TransitionWrapper animation="fade-in">
-            <div className="mb-16">
-              <h2 className="text-2xl font-display font-semibold mb-6 text-center">Design Philosophy</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-                {philosophy.map((principle, index) => (
+            <div className="mb-20">
+              <h2 className="text-2xl font-display font-semibold mb-10 text-center">Design Philosophy</h2>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                {philosophy.map((item, index) => (
                   <div 
                     key={index} 
-                    className="bg-secondary/30 rounded-xl p-6 flex items-start gap-3"
+                    className="p-6 rounded-xl flex flex-col items-center text-center shadow-lg transition-all duration-300 hover:translate-y-[-5px]"
+                    style={{
+                      background: "linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(240,242,245,0.9) 100%)",
+                      borderTop: "3px solid",
+                      borderColor: index % 2 === 0 ? "#10b981" : "#6366f1",
+                      boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05)"
+                    }}
                   >
-                    <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Check size={16} className="text-primary" />
+                    <div className="h-14 w-14 rounded-full bg-white shadow-md flex items-center justify-center mb-4">
+                      {item.icon}
                     </div>
-                    <p>{principle}</p>
+                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                    <p className="text-muted-foreground">{item.description}</p>
                   </div>
                 ))}
               </div>
               
-              <h3 className="text-xl font-display font-medium mb-4 text-center">Learning Theories & Models</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <h2 className="text-2xl font-display font-semibold mb-8 text-center">Learning Theories & Models</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {learningTheories.map((theory, index) => (
                   <div 
                     key={index} 
-                    className="bg-white border border-gray-100 shadow-sm rounded-xl p-5 transition-all hover:shadow-md"
+                    className="p-6 rounded-xl shadow-md flex flex-col transition-all duration-300 hover:shadow-lg"
                     style={{
-                      background: "linear-gradient(109.6deg, rgba(223,234,247,0.7) 11.2%, rgba(244,248,252,0.7) 91.1%)"
+                      background: "linear-gradient(120deg, rgba(248,250,252,0.9) 0%, rgba(241,245,249,0.8) 100%)",
                     }}
                   >
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="h-10 w-10 rounded-full bg-white shadow-sm flex items-center justify-center flex-shrink-0">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="h-14 w-14 rounded-full bg-white shadow-sm flex items-center justify-center flex-shrink-0">
                         {theory.icon}
                       </div>
-                      <h4 className="text-lg font-semibold">{theory.name}</h4>
+                      <h3 className="text-xl font-semibold">{theory.name}</h3>
                     </div>
-                    <p className="text-muted-foreground">{theory.description}</p>
+                    <p className="text-muted-foreground pl-0 md:pl-[4.5rem]">{theory.description}</p>
                   </div>
                 ))}
               </div>
