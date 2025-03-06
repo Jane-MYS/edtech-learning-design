@@ -1,4 +1,3 @@
-
 import { CourseCardProps } from "@/components/CourseCard";
 
 // Higher Education Courses
@@ -26,6 +25,30 @@ export const higherEdCourses: CourseCardProps[] = [
     category: "Higher Education",
     imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
     tags: ["Game Design", "Learning Theory", "Digital Pedagogy"]
+  },
+  {
+    id: "he-4",
+    title: "Instructional Excellence & Performance Development",
+    description: "A comprehensive training program that equips tutors with foundational skills in pedagogy, student engagement, and effective tutoring methodologies.",
+    category: "Higher Education",
+    imageUrl: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80",
+    tags: ["Tutor Training", "Pedagogy", "Student Engagement"]
+  },
+  {
+    id: "he-5",
+    title: "New Student Orientation Program (Higher Ed in China)",
+    description: "A specialized program designed to help international students adapt to Chinese higher education and university life for smooth cultural and academic integration.",
+    category: "Higher Education",
+    imageUrl: "https://images.unsplash.com/photo-1526297003708-f5a1c2c9c6e7?auto=format&fit=crop&w=800&q=80",
+    tags: ["International Education", "Cultural Integration", "Chinese Higher Ed"]
+  },
+  {
+    id: "he-6",
+    title: "ESL & Test Prep Instructional Programs",
+    description: "Structured ESL and test preparation support for adult learners and college students to ensure language proficiency and test readiness.",
+    category: "Higher Education",
+    imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+    tags: ["ESL", "Test Preparation", "Language Proficiency"]
   }
 ];
 
@@ -109,6 +132,54 @@ export const courseDetails: Record<string, {
       "Design thinking portfolio demonstrating process and solutions",
       "Research-based learning experience prototype",
       "Theoretical framework connecting design principles to learning science"
+    ]
+  },
+  "he-4": {
+    objectives: [
+      "Equip tutors with foundational skills in pedagogy and effective teaching methods",
+      "Develop student engagement strategies for diverse learning environments",
+      "Practice active listening and problem-solving in tutoring scenarios",
+      "Implement inclusive tutoring approaches for various learning needs"
+    ],
+    audience: "New and returning tutors, faculty members overseeing tutoring services",
+    duration: "8 weeks",
+    methodology: "This program combines hands-on role-playing activities, real-world tutoring scenarios, and digital learning resources including video tutorials, interactive assessments, and case studies.",
+    outcomes: [
+      "Enhanced tutoring skills for improved student learning outcomes",
+      "Practical experience through simulated tutoring scenarios",
+      "Digital portfolio of tutoring strategies and resources"
+    ]
+  },
+  "he-5": {
+    objectives: [
+      "Introduce international students to Chinese higher education systems and academic expectations",
+      "Facilitate cultural adaptation through language basics and etiquette training",
+      "Provide comprehensive orientation on university policies and available student services",
+      "Establish peer mentoring relationships for ongoing student support"
+    ],
+    audience: "Incoming international students, university administrators, faculty mentors",
+    duration: "3 weeks",
+    methodology: "This orientation program features interactive workshops on university policies and academic systems, cultural adaptation training, language basics, and a structured peer mentoring system for additional support.",
+    outcomes: [
+      "Improved academic readiness for the Chinese educational environment",
+      "Enhanced cultural competence and social integration strategies",
+      "Established support network through peer mentoring connections"
+    ]
+  },
+  "he-6": {
+    objectives: [
+      "Develop ESL learners' grammar and writing skills for academic contexts",
+      "Prepare students for standardized language tests including TOEFL, IELTS, and Duolingo",
+      "Enhance speaking proficiency through structured practice sessions",
+      "Create individualized study plans based on specific learning needs"
+    ],
+    audience: "ESL learners, international students, working professionals preparing for standardized exams",
+    duration: "12 weeks",
+    methodology: "This program provides grammar and writing workshops tailored for non-native speakers, test preparation with targeted exercises and practice tests, speaking practice sessions with AI-powered feedback, and customizable study plans.",
+    outcomes: [
+      "Improved standardized test scores and overall language proficiency",
+      "Enhanced confidence in academic and professional English usage",
+      "Personalized language development strategies for continued growth"
     ]
   },
   "np-1": {
