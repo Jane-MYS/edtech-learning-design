@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
@@ -149,8 +150,8 @@ const About = () => {
             <TransitionWrapper animation="slide-in" delay={100}>
               <div className="relative rounded-2xl overflow-hidden aspect-square shadow-xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80" 
-                  alt="Learning Designer at work" 
+                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80" 
+                  alt="Learning Designer workspace with laptop" 
                   className="object-cover w-full h-full"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent"></div>
