@@ -12,15 +12,15 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           <TransitionWrapper animation="fade-in">
             <p className="text-sm font-medium text-muted-foreground tracking-wider mb-3 uppercase">
-              Learning Design Portfolio
+              Learning Designer & Digital Media Specialist
             </p>
           </TransitionWrapper>
 
           <TransitionWrapper animation="fade-in" delay={100}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight mb-6">
-              Crafting Educational <br className="hidden sm:block" />
+              Designing for <br className="hidden sm:block" />
               <span className="relative inline-block">
-                Experiences
+                Digital Equity
                 <span className="absolute bottom-1 left-0 w-full h-[6px] bg-secondary"></span>
               </span>
             </h1>
@@ -28,7 +28,7 @@ const HeroSection = () => {
 
           <TransitionWrapper animation="fade-in" delay={200}>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Specialized in designing impactful learning experiences for higher education, ESL, corporate training, and non-profit organizations.
+              Specialized in creating inclusive learning experiences that bridge technology and pedagogy for higher education, multilingual learners, and community organizations.
             </p>
           </TransitionWrapper>
 

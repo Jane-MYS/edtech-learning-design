@@ -5,27 +5,27 @@ import { CourseCardProps } from "@/components/CourseCard";
 export const higherEdCourses: CourseCardProps[] = [
   {
     id: "he-1",
-    title: "Interactive Media for Digital Learning",
-    description: "A comprehensive course exploring how interactive media can enhance digital learning experiences in higher education settings.",
+    title: "ZTSD: Design for Thinking",
+    description: "A graduate course focused on design for thinking and the impact of human-centered approach in learning environment design.",
     category: "Higher Education",
     imageUrl: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80",
-    tags: ["Interactive Design", "Digital Media", "Educational Technology"]
+    tags: ["Graduate Education", "Design Thinking", "Human-Centered Design"]
   },
   {
     id: "he-2",
-    title: "Research Methods in Education",
-    description: "A methodological course teaching qualitative and quantitative research approaches for educational contexts.",
+    title: "ELIT 697: New Media Studies Practicum",
+    description: "A graduate practicum exploring digital media production and theory, focusing on interactive narratives and digital storytelling.",
     category: "Higher Education",
     imageUrl: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
-    tags: ["Research", "Methodology", "Data Analysis"]
+    tags: ["Digital Media", "Interactive Narratives", "Graduate Seminar"]
   },
   {
     id: "he-3",
-    title: "Curriculum Development Fundamentals",
-    description: "An in-depth exploration of curriculum design principles and best practices for higher education programs.",
+    title: "COMP 691: Games, Learning, & Society",
+    description: "An interdisciplinary course examining the intersection of game design, learning theory, and social impact in digital game environments.",
     category: "Higher Education",
     imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
-    tags: ["Curriculum Design", "Course Planning", "Assessment"]
+    tags: ["Game Design", "Learning Theory", "Digital Pedagogy"]
   }
 ];
 
@@ -33,27 +33,27 @@ export const higherEdCourses: CourseCardProps[] = [
 export const corporateCourses: CourseCardProps[] = [
   {
     id: "corp-1",
-    title: "Leadership Development Program",
-    description: "A comprehensive training program designed to develop effective leadership skills for managers and executives.",
+    title: "Equity & Diversity in the Tech Workplace",
+    description: "A professional development program designed for tech corporations to foster inclusive workplaces and address unconscious bias.",
     category: "Corporate Training",
     imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-    tags: ["Leadership", "Management", "Professional Development"]
+    tags: ["Diversity & Inclusion", "Tech Industry", "Professional Development"]
   },
   {
     id: "corp-2",
-    title: "Digital Transformation Strategies",
-    description: "A course helping organizations navigate the challenges of digital transformation through strategic planning and implementation.",
+    title: "Instructional Design for Tech Professionals",
+    description: "A specialized training program helping technical experts develop effective teaching and training materials for diverse audiences.",
     category: "Corporate Training",
     imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
-    tags: ["Digital Strategy", "Innovation", "Change Management"]
+    tags: ["Instructional Design", "Technical Training", "Knowledge Transfer"]
   },
   {
     id: "corp-3",
-    title: "Data-Driven Decision Making",
-    description: "A practical course teaching professionals how to leverage data for informed business decision making.",
+    title: "Digital Storytelling for Business",
+    description: "A workshop teaching professionals how to leverage narrative techniques for impactful business communications and presentations.",
     category: "Corporate Training",
     imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
-    tags: ["Data Analysis", "Business Intelligence", "Decision Making"]
+    tags: ["Storytelling", "Business Communication", "Presentation Skills"]
   }
 ];
 
@@ -61,27 +61,27 @@ export const corporateCourses: CourseCardProps[] = [
 export const eslCourses: CourseCardProps[] = [
   {
     id: "esl-1",
-    title: "Academic Writing for ESL Learners",
-    description: "A specialized course designed to help non-native English speakers develop strong academic writing skills.",
+    title: "Academic Writing for International Students",
+    description: "A course designed to help international students develop strong academic writing skills in English for university contexts.",
     category: "ESL & Writing",
     imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
-    tags: ["Academic Writing", "ESL", "Language Skills"]
+    tags: ["Academic Writing", "ESL", "University Preparation"]
   },
   {
     id: "esl-2",
-    title: "Business Communication for International Professionals",
-    description: "A practical course focusing on effective business communication strategies for non-native English speakers.",
+    title: "Business Communication for Global Professionals",
+    description: "A practical course focusing on effective business communication strategies for multilingual professionals in global workplaces.",
     category: "ESL & Writing",
     imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
-    tags: ["Business English", "Communication", "Professional Development"]
+    tags: ["Business English", "Global Communication", "Professional Writing"]
   },
   {
     id: "esl-3",
-    title: "Creative Writing Workshop",
-    description: "An engaging workshop that helps adult learners develop their creative writing skills in English.",
+    title: "Writing in the Digital Age",
+    description: "A course that explores effective writing across digital platforms, from blogs to social media to professional online content.",
     category: "ESL & Writing",
     imageUrl: "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?auto=format&fit=crop&w=800&q=80",
-    tags: ["Creative Writing", "Storytelling", "Narrative Skills"]
+    tags: ["Digital Writing", "Content Creation", "Online Communication"]
   }
 ];
 
@@ -90,26 +90,26 @@ export const nonProfitCourses: CourseCardProps[] = [
   {
     id: "np-1",
     title: "Beyond Stereotypes: Asian Women in Leadership",
-    description: "A transformative course addressing stereotypes and empowering Asian women in leadership roles within technology sectors.",
+    description: "A community-based workshop addressing stereotypes affecting Asian women in professional settings and developing leadership strategies.",
     category: "Non-Profit",
     imageUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=800&q=80",
-    tags: ["Leadership", "Diversity", "Empowerment"]
+    tags: ["AAPI Community", "Leadership Development", "Identity & Empowerment"]
   },
   {
     id: "np-2",
-    title: "Building Inclusive EdTech Communities",
-    description: "A course designed to help organizations create more inclusive and diverse educational technology environments.",
+    title: "Digital Advocacy for Community Organizations",
+    description: "A training program teaching non-profit organizations how to leverage digital tools for effective advocacy and community engagement.",
     category: "Non-Profit",
     imageUrl: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80",
-    tags: ["Inclusion", "Community Building", "EdTech"]
+    tags: ["Digital Advocacy", "Community Engagement", "Non-Profit Technology"]
   },
   {
     id: "np-3",
-    title: "Advocacy Through Digital Storytelling",
-    description: "A workshop teaching digital storytelling techniques for effective advocacy and awareness campaigns.",
+    title: "Women in EdTech: Breaking Barriers",
+    description: "A workshop series focused on supporting women entering and advancing in educational technology fields through mentorship and skill development.",
     category: "Non-Profit",
     imageUrl: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
-    tags: ["Digital Storytelling", "Advocacy", "Social Impact"]
+    tags: ["Women in Tech", "EdTech", "Gender Equity"]
   }
 ];
 
@@ -131,22 +131,22 @@ export const categories = [
   {
     id: "higher-ed",
     title: "Higher Education",
-    description: "Innovative courses designed for university settings, focusing on modern pedagogical approaches and digital learning."
+    description: "Graduate-level courses designed for diverse learners, focusing on digital media, design thinking, and game-based learning."
   },
   {
     id: "corporate",
     title: "Corporate Training",
-    description: "Professional development programs crafted for the private sector, addressing leadership, innovation, and digital transformation."
+    description: "Professional development programs emphasizing diversity, technical communication, and digital storytelling for business contexts."
   },
   {
     id: "esl-writing",
     title: "ESL & Writing Instruction",
-    description: "Specialized courses for language learners and adult education, focusing on academic writing and communication skills."
+    description: "Specialized courses supporting multilingual learners in academic and professional settings with a focus on digital communication."
   },
   {
     id: "non-profit",
-    title: "Non-Profit Initiatives",
-    description: "Educational programs developed for non-profit organizations, with a focus on diversity, inclusion, and women in technology."
+    title: "Community & Non-Profit Initiatives",
+    description: "Educational programs developed for community organizations, focusing on digital advocacy, AAPI leadership, and women in technology."
   }
 ];
 
@@ -165,55 +165,55 @@ export const courseDetails: Record<string, {
 }> = {
   "he-1": {
     objectives: [
-      "Analyze different interactive media formats for educational purposes",
-      "Design engaging digital learning experiences using multimedia elements",
-      "Evaluate the effectiveness of interactive content in educational settings",
-      "Implement accessibility standards in digital learning materials"
+      "Apply design thinking methodologies to educational contexts",
+      "Develop human-centered approaches to learning experience design",
+      "Create innovative learning solutions through iterative prototyping",
+      "Evaluate the effectiveness of design-based learning interventions"
     ],
-    audience: "Instructional designers, educational technologists, and faculty members interested in enhancing their digital teaching materials.",
-    duration: "12 weeks",
-    methodology: "This course employs a project-based learning approach, with participants creating their own interactive learning modules. Regular peer feedback sessions and expert consultations help refine designs.",
+    audience: "Graduate students in education, instructional design, and related fields interested in design-based approaches to learning.",
+    duration: "15 weeks (1 semester)",
+    methodology: "This course employs studio-based learning with regular design critiques, collaborative projects, and theoretical discussions. Students engage in hands-on design challenges throughout the semester.",
     outcomes: [
-      "Creation of an interactive learning module",
-      "Development of a digital learning strategy",
-      "Portfolio of interactive educational assets"
+      "Design thinking portfolio demonstrating process and solutions",
+      "Research-based learning experience prototype",
+      "Theoretical framework connecting design principles to learning science"
     ]
   },
   "np-1": {
     objectives: [
-      "Identify and analyze stereotypes affecting Asian women in technology fields",
-      "Develop leadership strategies to overcome systemic barriers",
-      "Create supportive networks and mentorship opportunities",
-      "Design inclusive policies and practices for organizations"
+      "Identify and analyze stereotypes affecting Asian women in professional settings",
+      "Develop authentic leadership approaches that honor cultural identity",
+      "Create strategies for navigating bias and microaggressions",
+      "Build community networks for ongoing support and mentorship"
     ],
-    audience: "Women of Asian descent in technology fields, organizational diversity leaders, and EdTech professionals.",
-    duration: "8 weeks",
-    methodology: "The program combines case studies, interactive workshops, and mentorship connections. Participants engage in reflection activities and collaborative problem-solving.",
+    audience: "Asian and Asian American women in professional fields, community organizers, and AAPI advocacy organizations.",
+    duration: "8 weeks (workshop series)",
+    methodology: "The program combines personal narrative exploration, case studies, community-building activities, and action planning. Participants develop personal leadership philosophies while building supportive networks.",
     outcomes: [
       "Personal leadership development plan",
-      "Organizational inclusion strategy",
-      "Network of peer support and resources"
+      "Community resource network",
+      "Strategies for workplace advocacy and empowerment"
     ],
     testimonial: {
-      quote: "This course transformed how I approach leadership in my organization. The strategies I learned have helped me navigate challenges and create more inclusive teams.",
+      quote: "This workshop transformed how I view my cultural identity in leadership contexts. The community we built continues to be a source of support and inspiration.",
       author: "Michelle Chen",
       title: "Education Technology Director"
     }
   },
   "esl-1": {
     objectives: [
-      "Master academic writing conventions and structures",
-      "Develop research and citation skills for academic contexts",
-      "Refine grammar and vocabulary for scholarly writing",
-      "Practice revision and editing techniques"
+      "Develop academic writing conventions for university contexts",
+      "Build research and source integration skills",
+      "Enhance critical thinking through written analysis",
+      "Master editing and revision strategies for academic English"
     ],
-    audience: "Non-native English speakers in higher education or preparing for academic programs.",
-    duration: "16 weeks",
-    methodology: "The course uses a scaffolded approach, gradually building complexity through regular writing assignments. Peer review and individual feedback are emphasized.",
+    audience: "International and multilingual students preparing for or currently enrolled in university programs.",
+    duration: "10 weeks",
+    methodology: "The course uses a process-oriented approach to writing, with regular peer review, individual conferences, and scaffolded assignments that build toward major academic writing projects.",
     outcomes: [
-      "Portfolio of academic writing samples",
-      "Research paper meeting academic standards",
-      "Enhanced editing and revision skills"
+      "Academic research paper demonstrating scholarly conventions",
+      "Literature review synthesizing multiple sources",
+      "Reflective portfolio documenting writing development"
     ]
   }
   // Additional details for other courses can be added as needed

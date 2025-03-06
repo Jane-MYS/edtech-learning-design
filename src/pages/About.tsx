@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import TransitionWrapper from '@/components/TransitionWrapper';
-import AboutSection from '@/components/AboutSection';
 import { Check } from 'lucide-react';
 
 const About = () => {
@@ -14,49 +13,49 @@ const About = () => {
   
   const experiences = [
     {
-      title: "Senior Learning Designer",
-      company: "University Innovation Lab",
-      period: "2019 - Present",
-      description: "Lead design of innovative digital learning experiences for undergraduate and graduate programs. Collaborated with faculty to develop interactive courses that increase student engagement and learning outcomes."
+      title: "Learning Experience Designer",
+      company: "Digital Education Innovation Lab",
+      period: "2020 - Present",
+      description: "Lead the design of digital learning experiences for graduate programs in education and media studies. Collaborate with faculty to create interactive courses that integrate design thinking, game-based learning, and digital storytelling."
     },
     {
-      title: "Instructional Designer",
-      company: "Corporate Learning Solutions",
-      period: "2016 - 2019",
-      description: "Designed and developed training programs for corporate clients across various industries. Specialized in leadership development and digital transformation training initiatives."
+      title: "Educational Technology Specialist",
+      company: "Center for Digital Equity",
+      period: "2017 - 2020",
+      description: "Developed training programs for educators on implementing culturally responsive digital pedagogies. Created resources supporting multilingual learners in technology-enhanced learning environments."
     },
     {
-      title: "ESL Curriculum Developer",
-      company: "Global Language Institute",
-      period: "2013 - 2016",
-      description: "Created comprehensive ESL curriculum for adult learners with a focus on academic and professional contexts. Developed innovative teaching materials and assessment strategies."
+      title: "ESL Instructor & Curriculum Developer",
+      company: "International Education Institute",
+      period: "2014 - 2017",
+      description: "Designed and taught academic writing courses for international students. Created digital resources for language acquisition with a focus on academic and professional contexts."
     }
   ];
   
   const education = [
     {
-      degree: "M.Ed. in Learning Design and Technology",
-      institution: "Stanford University",
-      year: "2013"
-    },
-    {
-      degree: "B.A. in English and Education",
+      degree: "Ph.D. in Learning Design & Technology",
       institution: "University of California, Berkeley",
-      year: "2011"
+      year: "2019"
     },
     {
-      degree: "Certificate in TESOL",
-      institution: "Cambridge University",
+      degree: "M.A. in TESOL & Digital Media",
+      institution: "New York University",
+      year: "2014"
+    },
+    {
+      degree: "B.A. in Comparative Literature",
+      institution: "Brown University",
       year: "2012"
     }
   ];
   
   const philosophy = [
-    "Learner-centered design that puts user needs at the forefront",
-    "Evidence-based approaches grounded in learning science",
-    "Inclusive design principles that address diverse learning needs",
-    "Technology integration that enhances rather than complicates learning",
-    "Continuous improvement through meaningful assessment and iteration"
+    "Digital equity as a foundation for educational design",
+    "Culturally responsive approaches to learning technology",
+    "Community-based participatory design practices",
+    "Critical digital pedagogy that questions technology's role",
+    "Multimodal learning that embraces diverse ways of knowing"
   ];
 
   return (
@@ -71,7 +70,7 @@ const About = () => {
                 About Me
               </h1>
               <p className="text-lg text-muted-foreground">
-                Learning designer with a passion for creating educational experiences that engage, inspire, and transform.
+                Learning designer with a passion for creating equitable digital experiences that engage, inspire, and transform.
               </p>
             </div>
           </TransitionWrapper>
@@ -81,13 +80,13 @@ const About = () => {
               <div>
                 <h2 className="text-2xl font-display font-semibold mb-6">My Approach</h2>
                 <p className="text-muted-foreground mb-6">
-                  With over a decade of experience in learning design, I've developed a deep understanding of how to create educational experiences that truly resonate with learners. My work spans higher education, corporate training, language acquisition, and non-profit initiatives.
+                  My work lives at the intersection of learning design, digital media, and cultural equity. With experience spanning higher education, language learning, and community-based organizations, I bring a multidisciplinary perspective to educational design challenges.
                 </p>
                 <p className="text-muted-foreground mb-6">
-                  I believe that effective learning experiences should be both engaging and transformative. By combining sound pedagogical principles with innovative design approaches, I create courses that not only deliver content but inspire genuine curiosity and foster meaningful growth.
+                  I believe that effective digital learning must be grounded in principles of inclusion and accessibility. My designs prioritize learner agency, cultural responsiveness, and meaningful technology integration that serves pedagogical goals rather than technological novelty.
                 </p>
                 <p className="text-muted-foreground">
-                  My specialty lies in designing for diverse audiences and contexts, ensuring that learning is accessible, inclusive, and relevant to all participants regardless of their background or prior knowledge.
+                  As an Asian American woman working in educational technology, I'm particularly committed to creating learning experiences that challenge stereotypes, amplify diverse voices, and create pathways to leadership for underrepresented groups in digital spaces.
                 </p>
               </div>
             </TransitionWrapper>
@@ -163,14 +162,14 @@ const About = () => {
                   <div className="flex flex-wrap gap-3">
                     {[
                       "Learning Experience Design", 
-                      "Curriculum Development", 
-                      "ESL Instruction", 
-                      "Educational Technology", 
-                      "Assessment Design",
-                      "Inclusive Learning",
-                      "Multimedia Production",
-                      "Instructional Design",
-                      "Workshop Facilitation"
+                      "Digital Media Production", 
+                      "Multilingual Education", 
+                      "Game-Based Learning", 
+                      "Design Thinking",
+                      "Inclusive Design",
+                      "Interactive Storytelling",
+                      "Educational Technology",
+                      "Community-Based Research"
                     ].map((skill, index) => (
                       <span 
                         key={index} 

@@ -4,15 +4,15 @@ import TransitionWrapper from './TransitionWrapper';
 
 const AboutSection = () => {
   const skills = [
-    "Curriculum Development",
     "Learning Experience Design",
-    "Course Authoring",
-    "Adult Education",
-    "ESL Instruction",
+    "Digital Media Production",
+    "Inclusive Pedagogy",
+    "Multilingual Education",
+    "Game-Based Learning",
     "Educational Technology",
-    "Workshop Facilitation",
-    "Inclusive Design",
-    "Instructional Design"
+    "Design Thinking",
+    "Community-Based Learning",
+    "Multicultural Education"
   ];
 
   return (
@@ -26,11 +26,11 @@ const AboutSection = () => {
               </h2>
               
               <p className="text-muted-foreground mb-6">
-                I specialize in creating transformative learning experiences that engage diverse audiences across higher education, corporate settings, and non-profit organizations. My approach combines research-backed instructional design principles with innovative technology to deliver meaningful educational outcomes.
+                I create learning experiences at the intersection of technology, culture, and education. With expertise in digital media production and instructional design, I develop innovative courses that engage diverse learners across higher education, corporate, and community settings.
               </p>
               
               <p className="text-muted-foreground mb-8">
-                With expertise in ESL instruction and adult education, I design courses that address the unique needs of learners from varied backgrounds. My work with organizations focused on women in EdTech has further honed my ability to create inclusive learning environments that challenge stereotypes and promote leadership.
+                My work is guided by principles of digital equity and inclusive design. As an educator with experience supporting multilingual learners and developing community-based programs, I'm passionate about creating learning environments that celebrate diverse perspectives and provide meaningful opportunities for growth.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-8">
@@ -52,7 +52,7 @@ const AboutSection = () => {
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-xl">
                 <img 
                   src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" 
-                  alt="Designer working on a course" 
+                  alt="Learning designer working on digital media project" 
                   className="object-cover w-full h-full"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent"></div>
