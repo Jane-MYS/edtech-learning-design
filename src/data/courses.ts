@@ -1,3 +1,4 @@
+
 import { CourseCardProps } from "@/components/CourseCard";
 
 // Higher Education Courses
@@ -15,7 +16,7 @@ export const higherEdCourses: CourseCardProps[] = [
     title: "New Student Orientation Program (Higher Ed in China)",
     description: "A specialized program designed to help international students adapt to Chinese higher education and university life for smooth cultural and academic integration.",
     category: "Higher Education",
-    imageUrl: "https://images.unsplash.com/photo-1526297003708-f5a1c2c9c6e7?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1609861517208-e5b7b4cd4b88?auto=format&fit=crop&w=800&q=80",
     tags: ["International Education", "Cultural Integration", "Chinese Higher Ed"]
   },
   {
