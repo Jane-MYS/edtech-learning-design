@@ -1,8 +1,9 @@
+
 import { useEffect } from 'react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import TransitionWrapper from '@/components/TransitionWrapper';
-import { Check, Code, Monitor, Database, Wrench, Server, Webcam } from 'lucide-react';
+import { Check, Code, Monitor, Database, Wrench, Server, Webcam, Lightbulb, Brain, Book, GraduationCap, Layers } from 'lucide-react';
 
 const About = () => {
   useEffect(() => {
@@ -16,6 +17,29 @@ const About = () => {
     "Community-based participatory design practices",
     "Critical digital pedagogy that questions technology's role",
     "Multimodal learning that embraces diverse ways of knowing"
+  ];
+
+  const learningTheories = [
+    {
+      name: "ADDIE Model",
+      icon: <Layers size={20} className="text-purple-500" />,
+      description: "Systematic instructional design through Analysis, Design, Development, Implementation, and Evaluation"
+    },
+    {
+      name: "Behaviorism",
+      icon: <Check size={20} className="text-emerald-500" />,
+      description: "Learning as observable changes in behavior through stimulus-response connections"
+    },
+    {
+      name: "Cognitive Psychology",
+      icon: <Brain size={20} className="text-amber-500" />,
+      description: "Focus on mental processes, information processing, and knowledge acquisition"
+    },
+    {
+      name: "Constructivism",
+      icon: <Lightbulb size={20} className="text-sky-500" />,
+      description: "Learners actively construct knowledge through experience and social interactions"
+    }
   ];
 
   const toolsAndTechnologies = [
@@ -94,7 +118,7 @@ const About = () => {
           <TransitionWrapper animation="fade-in">
             <div className="mb-16">
               <h2 className="text-2xl font-display font-semibold mb-6 text-center">Design Philosophy</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
                 {philosophy.map((principle, index) => (
                   <div 
                     key={index} 
@@ -104,6 +128,27 @@ const About = () => {
                       <Check size={16} className="text-primary" />
                     </div>
                     <p>{principle}</p>
+                  </div>
+                ))}
+              </div>
+              
+              <h3 className="text-xl font-display font-medium mb-4 text-center">Learning Theories & Models</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {learningTheories.map((theory, index) => (
+                  <div 
+                    key={index} 
+                    className="bg-white border border-gray-100 shadow-sm rounded-xl p-5 transition-all hover:shadow-md"
+                    style={{
+                      background: "linear-gradient(109.6deg, rgba(223,234,247,0.7) 11.2%, rgba(244,248,252,0.7) 91.1%)"
+                    }}
+                  >
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="h-10 w-10 rounded-full bg-white shadow-sm flex items-center justify-center flex-shrink-0">
+                        {theory.icon}
+                      </div>
+                      <h4 className="text-lg font-semibold">{theory.name}</h4>
+                    </div>
+                    <p className="text-muted-foreground">{theory.description}</p>
                   </div>
                 ))}
               </div>
