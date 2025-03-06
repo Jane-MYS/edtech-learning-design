@@ -29,34 +29,6 @@ export const higherEdCourses: CourseCardProps[] = [
   }
 ];
 
-// ESL and Writing Courses
-export const eslCourses: CourseCardProps[] = [
-  {
-    id: "esl-1",
-    title: "Academic Writing for International Students",
-    description: "A course designed to help international students develop strong academic writing skills in English for university contexts.",
-    category: "ESL & Writing",
-    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
-    tags: ["Academic Writing", "ESL", "University Preparation"]
-  },
-  {
-    id: "esl-2",
-    title: "Business Communication for Global Professionals",
-    description: "A practical course focusing on effective business communication strategies for multilingual professionals in global workplaces.",
-    category: "ESL & Writing",
-    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
-    tags: ["Business English", "Global Communication", "Professional Writing"]
-  },
-  {
-    id: "esl-3",
-    title: "Writing in the Digital Age",
-    description: "A course that explores effective writing across digital platforms, from blogs to social media to professional online content.",
-    category: "ESL & Writing",
-    imageUrl: "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?auto=format&fit=crop&w=800&q=80",
-    tags: ["Digital Writing", "Content Creation", "Online Communication"]
-  }
-];
-
 // Non-Profit Courses
 export const nonProfitCourses: CourseCardProps[] = [
   {
@@ -88,7 +60,6 @@ export const nonProfitCourses: CourseCardProps[] = [
 // All courses combined
 export const allCourses = [
   ...higherEdCourses,
-  ...eslCourses,
   ...nonProfitCourses
 ];
 
@@ -103,11 +74,6 @@ export const categories = [
     id: "higher-ed",
     title: "Higher Education",
     description: "Graduate-level courses designed for diverse learners, focusing on digital media, design thinking, and game-based learning."
-  },
-  {
-    id: "esl-writing",
-    title: "ESL & Writing Instruction",
-    description: "Specialized courses supporting multilingual learners in academic and professional settings with a focus on digital communication."
   },
   {
     id: "non-profit",
@@ -143,22 +109,6 @@ export const courseDetails: Record<string, {
       "Design thinking portfolio demonstrating process and solutions",
       "Research-based learning experience prototype",
       "Theoretical framework connecting design principles to learning science"
-    ]
-  },
-  "esl-1": {
-    objectives: [
-      "Develop academic writing conventions for university contexts",
-      "Build research and source integration skills",
-      "Enhance critical thinking through written analysis",
-      "Master editing and revision strategies for academic English"
-    ],
-    audience: "International and multilingual students preparing for or currently enrolled in university programs.",
-    duration: "10 weeks",
-    methodology: "The course uses a process-oriented approach to writing, with regular peer review, individual conferences, and scaffolded assignments that build toward major academic writing projects.",
-    outcomes: [
-      "Academic research paper demonstrating scholarly conventions",
-      "Literature review synthesizing multiple sources",
-      "Reflective portfolio documenting writing development"
     ]
   },
   "np-1": {
