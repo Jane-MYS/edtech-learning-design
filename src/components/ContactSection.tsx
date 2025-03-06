@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Check, Mail, MessageSquare } from 'lucide-react';
+import { Check, Linkedin, MessageSquare } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 import TransitionWrapper from './TransitionWrapper';
 
@@ -70,12 +70,12 @@ const ContactSection = () => {
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Mail size={18} className="text-primary" />
+                    <Linkedin size={18} className="text-primary" />
                   </div>
                   <div>
-                    <p className="font-medium">Email</p>
-                    <a href="mailto:contact@example.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                      contact@example.com
+                    <p className="font-medium">LinkedIn</p>
+                    <a href="https://linkedin.com/in/yourusername" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                      linkedin.com/in/yourusername
                     </a>
                   </div>
                 </div>
