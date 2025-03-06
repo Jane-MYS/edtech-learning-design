@@ -3,30 +3,6 @@ import { CourseCardProps } from "@/components/CourseCard";
 // Higher Education Courses
 export const higherEdCourses: CourseCardProps[] = [
   {
-    id: "he-1",
-    title: "ZTSD: Design for Thinking",
-    description: "A graduate course focused on design for thinking and the impact of human-centered approach in learning environment design.",
-    category: "Higher Education",
-    imageUrl: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80",
-    tags: ["Graduate Education", "Design Thinking", "Human-Centered Design"]
-  },
-  {
-    id: "he-2",
-    title: "ELIT 697: New Media Studies Practicum",
-    description: "A graduate practicum exploring digital media production and theory, focusing on interactive narratives and digital storytelling.",
-    category: "Higher Education",
-    imageUrl: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
-    tags: ["Digital Media", "Interactive Narratives", "Graduate Seminar"]
-  },
-  {
-    id: "he-3",
-    title: "COMP 691: Games, Learning, & Society",
-    description: "An interdisciplinary course examining the intersection of game design, learning theory, and social impact in digital game environments.",
-    category: "Higher Education",
-    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
-    tags: ["Game Design", "Learning Theory", "Digital Pedagogy"]
-  },
-  {
     id: "he-4",
     title: "Instructional Excellence & Performance Development",
     description: "A comprehensive training program that equips tutors with foundational skills in pedagogy, student engagement, and effective tutoring methodologies.",
@@ -118,22 +94,6 @@ export const courseDetails: Record<string, {
     title: string;
   }
 }> = {
-  "he-1": {
-    objectives: [
-      "Apply design thinking methodologies to educational contexts",
-      "Develop human-centered approaches to learning experience design",
-      "Create innovative learning solutions through iterative prototyping",
-      "Evaluate the effectiveness of design-based learning interventions"
-    ],
-    audience: "Graduate students in education, instructional design, and related fields interested in design-based approaches to learning.",
-    duration: "15 weeks (1 semester)",
-    methodology: "This course employs studio-based learning with regular design critiques, collaborative projects, and theoretical discussions. Students engage in hands-on design challenges throughout the semester.",
-    outcomes: [
-      "Design thinking portfolio demonstrating process and solutions",
-      "Research-based learning experience prototype",
-      "Theoretical framework connecting design principles to learning science"
-    ]
-  },
   "he-4": {
     objectives: [
       "Equip tutors with foundational skills in pedagogy and effective teaching methods",
