@@ -23,12 +23,17 @@ const About = () => {
     {
       category: "Design & Production",
       icon: <Monitor size={24} className="text-primary" />,
-      tools: ["Adobe Creative Suite", "Figma", "Canva Pro", "Final Cut Pro", "Camtasia", "Articulate 360"]
+      tools: ["Adobe Creative Cloud", "Articulate", "Storyline", "Rise", "Captivate", "iSpring", "Figma", "Canva Pro"]
     },
     {
       category: "Learning Platforms",
       icon: <Server size={24} className="text-primary" />,
-      tools: ["Canvas LMS", "Moodle", "Blackboard", "EdX", "Google Classroom", "Teachable"]
+      tools: ["Canvas LMS", "Moodle", "Blackboard", "H5P", "EdX", "Google Classroom", "Teachable"]
+    },
+    {
+      category: "Communication & Collaboration",
+      icon: <Webcam size={24} className="text-primary" />,
+      tools: ["Zoom", "Loom", "Google Meet", "Flipgrid", "Mentimeter"]
     },
     {
       category: "Development",
@@ -38,7 +43,7 @@ const About = () => {
     {
       category: "Assessment & Analytics",
       icon: <Database size={24} className="text-primary" />,
-      tools: ["Qualtrics", "Google Analytics", "Tableau", "SPSS", "Learning Analytics Dashboards"]
+      tools: ["Grammarly", "Kahoot", "Duolingo", "Qualtrics", "Google Analytics", "Learning Analytics Dashboards"]
     }
   ];
 
