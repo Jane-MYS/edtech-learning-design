@@ -19,7 +19,8 @@ import {
   Users,
   Hand,
   Search,
-  SplitSquareVertical
+  SplitSquareVertical,
+  Compass
 } from 'lucide-react';
 
 const About = () => {
@@ -53,6 +54,11 @@ const About = () => {
       title: "Multimodal Learning",
       description: "Embracing diverse ways of knowing through varied representational and communication modes",
       icon: <SplitSquareVertical size={24} className="text-sky-500" />
+    },
+    {
+      title: "Human-Centered Design",
+      description: "Focusing on the needs, contexts, and experiences of learners throughout the design process",
+      icon: <Compass size={24} className="text-purple-500" />
     }
   ];
 
@@ -262,3 +268,4 @@ const About = () => {
 };
 
 export default About;
+
