@@ -17,7 +17,7 @@ import {
   Layers,
   Globe,
   Users,
-  HandsClapping,
+  Hand,
   Search,
   SplitSquareVertical
 } from 'lucide-react';
@@ -42,7 +42,7 @@ const About = () => {
     {
       title: "Community Participation",
       description: "Engaging communities in co-designing educational experiences that meet their needs",
-      icon: <HandsClapping size={24} className="text-amber-500" />
+      icon: <Hand size={24} className="text-amber-500" />
     },
     {
       title: "Critical Pedagogy",
