@@ -1,9 +1,8 @@
-
 import { useEffect } from 'react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import TransitionWrapper from '@/components/TransitionWrapper';
-import { Check, Code, Monitor, Database, Wrench, Server } from 'lucide-react';
+import { Check, Code, Monitor, Database, Wrench, Server, Webcam } from 'lucide-react';
 
 const About = () => {
   useEffect(() => {
@@ -43,7 +42,7 @@ const About = () => {
     {
       category: "Assessment & Analytics",
       icon: <Database size={24} className="text-primary" />,
-      tools: ["Grammarly", "Kahoot", "Duolingo", "Qualtrics", "Google Analytics", "Learning Analytics Dashboards"]
+      tools: ["Grammarly", "Kahoot", "Duolingo", "Qualtrics", "Google Analytics", "MAXQDA", "Learning Analytics Dashboards"]
     }
   ];
 
