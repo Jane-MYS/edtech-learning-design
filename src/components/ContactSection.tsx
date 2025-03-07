@@ -74,8 +74,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-medium">LinkedIn</p>
-                    <a href="https://linkedin.com/in/yourusername" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                      linkedin.com/in/yourusername
+                    <a href="https://www.linkedin.com/in/jane-shi-m-a-pmp-46a418153" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                      linkedin.com/in/jane-shi-m-a-pmp-46a418153
                     </a>
                   </div>
                 </div>
