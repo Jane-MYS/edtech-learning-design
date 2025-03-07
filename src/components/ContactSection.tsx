@@ -1,11 +1,13 @@
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Check, Linkedin, MessageSquare } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 import TransitionWrapper from './TransitionWrapper';
+import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
   const { toast } = useToast();
+  const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,26 +28,42 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitted(true);
-      
-      toast({
-        title: "Message sent",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-      });
-      
-      // Reset form after a delay
-      setTimeout(() => {
-        setFormData({
-          name: '',
-          email: '',
-          message: ''
+    emailjs.sendForm(
+      'service_dtqxfea',   // Service ID
+      'contact_form',      // Template ID (you'll need to create this in EmailJS)
+      formRef.current!,    // Form reference
+      'EMfMIqzm2ItpvMqoh'  // Public key
+    )
+      .then((result) => {
+        console.log('Email sent successfully:', result.text);
+        setIsSubmitting(false);
+        setSubmitted(true);
+        
+        toast({
+          title: "Message sent",
+          description: "Thank you for reaching out. I'll get back to you soon.",
         });
-        setSubmitted(false);
-      }, 3000);
-    }, 1500);
+        
+        // Reset form after a delay
+        setTimeout(() => {
+          setFormData({
+            name: '',
+            email: '',
+            message: ''
+          });
+          setSubmitted(false);
+        }, 3000);
+      })
+      .catch((error) => {
+        console.error('Failed to send email:', error.text);
+        setIsSubmitting(false);
+        
+        toast({
+          title: "Message failed",
+          description: "Sorry, there was an error sending your message. Please try again.",
+          variant: "destructive",
+        });
+      });
   };
 
   return (
@@ -96,7 +114,7 @@ const ContactSection = () => {
           </TransitionWrapper>
           
           <TransitionWrapper animation="slide-in" delay={100}>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-1">
                   Name
