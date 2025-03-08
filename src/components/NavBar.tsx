@@ -43,7 +43,7 @@ const NavBar = () => {
           to="/" 
           className="text-xl md:text-2xl font-display font-medium tracking-tight"
         >
-          <span className="text-primary">Learning Design</span>
+          <span className="text-primary">Jane Shi</span>
         </Link>
 
         {/* Desktop Navigation */}
