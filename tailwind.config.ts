@@ -22,6 +22,7 @@ export default {
 			fontFamily: {
 				sans: ['Inter', 'system-ui', 'sans-serif'],
 				display: ['SF Pro Display', 'Inter', 'system-ui', 'sans-serif'],
+				handwritten: ['Caveat', 'cursive'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

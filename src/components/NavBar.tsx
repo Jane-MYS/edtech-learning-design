@@ -41,7 +41,7 @@ const NavBar = () => {
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link 
           to="/" 
-          className="text-xl md:text-2xl font-display font-medium tracking-tight"
+          className="text-xl md:text-2xl font-handwritten tracking-wide"
         >
           <span className="text-primary">Jane Shi</span>
         </Link>
