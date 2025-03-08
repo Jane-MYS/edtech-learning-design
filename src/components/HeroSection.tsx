@@ -10,12 +10,6 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <TransitionWrapper animation="fade-in">
-            <p className="text-sm font-medium text-muted-foreground tracking-wider mb-3 uppercase">
-              Learning Designer & Digital Media Specialist
-            </p>
-          </TransitionWrapper>
-
           <TransitionWrapper animation="fade-in" delay={100}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight mb-6">
               Designing for <br className="hidden sm:block" />
