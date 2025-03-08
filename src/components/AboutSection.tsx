@@ -51,8 +51,8 @@ const AboutSection = () => {
             <TransitionWrapper animation="fade-in-delayed">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-xl">
                 <img 
-                  src="/lovable-uploads/6b76f732-3380-4805-95d4-e4ba4aceb48f.png"
-                  alt="Flat illustration of people collaborating on digital learning design" 
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=90"
+                  alt="People collaborating with technology and digital learning tools" 
                   className="object-cover w-full h-full"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent"></div>
