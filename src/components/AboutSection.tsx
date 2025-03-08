@@ -51,8 +51,8 @@ const AboutSection = () => {
             <TransitionWrapper animation="fade-in-delayed">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80" 
-                  alt="Abstract minimalist representation of a learner" 
+                  src="/lovable-uploads/c72d53d2-e003-4c2f-aae5-567fc44cac9d.png"
+                  alt="Lightbulb with educational concepts on chalkboard background" 
                   className="object-cover w-full h-full"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent"></div>
