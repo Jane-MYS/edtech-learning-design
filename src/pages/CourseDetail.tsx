@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Users, BookOpen, CheckCircle } from 'lucide-react';
+import { ArrowLeft, Users, BookOpen, CheckCircle, FileText } from 'lucide-react';
 import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
 import TransitionWrapper from '@/components/TransitionWrapper';
@@ -15,7 +15,6 @@ const CourseDetail = () => {
   const details = id ? courseDetails[id] : undefined;
   
   useEffect(() => {
-    // Simulate content loading
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 800);
@@ -24,7 +23,6 @@ const CourseDetail = () => {
   }, []);
   
   useEffect(() => {
-    // Scroll to top when component mounts
     window.scrollTo(0, 0);
   }, []);
   
@@ -60,6 +58,19 @@ const CourseDetail = () => {
       </div>
     );
   }
+  
+  const getResourceUrl = (courseId: string) => {
+    const resourceMap: Record<string, string> = {
+      "he-4": "/course-materials/he-4-syllabus.pdf",
+      "he-5": "/course-materials/he-5-syllabus.pdf",
+      "he-6": "/course-materials/he-6-syllabus.pdf",
+      "np-1": "/course-materials/np-1-syllabus.pdf",
+      "np-2": "/course-materials/np-2-syllabus.pdf",
+      "np-3": "/course-materials/np-3-syllabus.pdf"
+    };
+    
+    return resourceMap[courseId] || "#";
+  };
   
   return (
     <div className="min-h-screen bg-background flex flex-col">
@@ -193,16 +204,20 @@ const CourseDetail = () => {
                 )}
                 
                 <div className="mt-6 pt-6 border-t border-border">
-                  <Link
-                    to="/contact"
+                  <a
+                    href={getResourceUrl(course.id)}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={cn(
                       "block w-full py-3 px-4 text-center bg-primary text-primary-foreground rounded-md font-medium",
                       "transition-all hover:shadow-lg hover:transform hover:scale-[1.02] active:scale-[0.98]",
-                      "focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
+                      "focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2",
+                      "inline-flex items-center justify-center gap-2"
                     )}
                   >
-                    Inquire About This Course
-                  </Link>
+                    <FileText size={16} />
+                    Learn More Details
+                  </a>
                 </div>
               </div>
             </TransitionWrapper>
