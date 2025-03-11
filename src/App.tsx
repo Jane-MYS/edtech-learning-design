@@ -1,14 +1,16 @@
-
 import { HashRouter } from 'react-router-dom'
 import { useRoutes } from 'react-router-dom'
 import { routes } from './routes'
 
-function App() {
+function AppRoutes() {
   const element = useRoutes(routes)
-  
+  return element
+}
+
+function App() {
   return (
     <HashRouter>
-      {element}
+      <AppRoutes />
     </HashRouter>
   )
 }
