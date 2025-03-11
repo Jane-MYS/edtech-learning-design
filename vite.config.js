@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 
 export default defineConfig({
-  base: './',
+  base: '/edtech-learning-design/',  // Update this to match your repository name
   plugins: [react()],
   server: {
     port: 3000,
